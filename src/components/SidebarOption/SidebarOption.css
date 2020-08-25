@@ -2,10 +2,11 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: white;
 }
 
 .sidebarOption:hover {
-    background-color: #e8f5fe;
+    background-color: rgb(30, 56, 82);
     border-radius: 30px;
     color: var(--twitter-color);
     transition: color 100ms ease-out;

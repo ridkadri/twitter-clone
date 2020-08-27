@@ -18,11 +18,31 @@ const Widgets = () => {
                     <h2>Trends for you</h2>
                     <SettingsIcon className='widgets_trends_header_icon'/>
                 </div>
-                    <Trends/>
-                    <Trends/>
-                    <Trends/>
-                    <Trends/>
-                    <Trends/>
+                    <Trends
+                        description='Technology'
+                        topic='Jeff Bezos'
+                        numberoftweets='33.9K Tweets'
+                    />
+                    <Trends
+                        description='Hip hop'
+                        topic='Jay Z'
+                        numberoftweets='5,830 Tweets'
+                    />
+                    <Trends
+                        description='Trending in Ghana'
+                        topic='#Kumerica'
+                        numberoftweets='7,296 Tweets'
+                    />
+                    <Trends
+                        description='Trending in Ghana'
+                        topic='Momo'
+                        numberoftweets='98.3K Tweets'
+                    />
+                    <Trends
+                        description='Trending in Ghana'
+                        topic='15gh'
+                        numberoftweets='2,965 Tweets'
+                    />
                     <p className='widgets_showmore'>Show more</p>
             </div>
             <div className='widgets_wtfollow_container'>

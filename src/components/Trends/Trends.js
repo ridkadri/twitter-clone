@@ -4,11 +4,11 @@ import './Trends.css';
 const Trends = ({description, topic, numberoftweets}) => {
     return (
         <div className='trends'>
-            <p className='trends_description'>Trending in Ghana</p>
-            <h3 className='trends_topic'>15gh</h3>
-            <p className='trends_tweets'>2,031 Tweets</p>
+            <p className='trends_description'>{description}</p>
+            <h3 className='trends_topic'>{topic}</h3>
+            <p className='trends_tweets'>{numberoftweets}</p>
         </div>
     )
 }
 
-export default Trends
+export default Trends;

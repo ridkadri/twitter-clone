@@ -29,3 +29,9 @@
     font-size: 20px;
     font-weight: 800;
 }
+
+.feed_header > img {
+    display: flex;
+    margin-left: 20px;
+    color: var(--twitter-color) !important;
+}

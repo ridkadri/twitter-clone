@@ -1,0 +1,33 @@
+.widgets_wtfollow_userblock {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #263341;
+}
+
+.widgets_wtfollow_userblock_details {
+    display: flex;
+    flex-direction: column;
+}
+
+.widgets_wtfollow_userblock_details > h3 {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.widgets_wtfollow_userblock_details > p {
+    margin-left: 10px;
+}
+
+.widgets_wtfollow_userblock > button {
+    margin-left: 90px;
+    border-radius: 20px;
+    border-color: var(--twitter-color);
+    color: var(--twitter-color);
+    font-weight: 900;
+    text-transform: inherit;
+    font-size: 15px;
+
+}

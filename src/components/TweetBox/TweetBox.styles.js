@@ -1,43 +1,51 @@
-.tweetBox {
+import styled from 'styled-components';
+import { Button } from '@material-ui/core';
+
+
+export const TweetBoxContainer = styled.div`
     padding-bottom: 10px;
     padding-right: 10px;
     border-bottom: 12px solid #263341;
-}
 
-.tweetBox > form {
+    @media screen and (max-width: 800px) {
+        height: 200px;
+
+    }
+`;
+
+export const TweetBoxForm = styled.div`
     display: flex;
     flex-direction: column;
-}
+`;
 
-.tweetBox_input {
+export const TweetBoxInputContainer = styled.div`
     padding: 20px;
     display: flex;
-}
+`;
 
-
-.tweetBox_input > input {
+export const TweetBoxInput = styled.input`
     flex: 1;
     margin-left: 20px;
     font-size: 20px;
     border: none;
     background-color: var(--twitter-background);
     color: white;
-}
+`;
 
-.tweetBox_action {
+export const TweetBoxAction = styled.div`
     display: flex;
     margin-left: 80px;
     margin-top: -20px;
-}
+`;
 
-.tweetBox_icons {
+export const TweetBoxIcons = styled.div`
     color: var(--twitter-color);
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-}
+`;
 
-.tweetBox_action > button {
+export const TweetBoxButton = styled(Button)`
     background-color: var(--twitter-color) !important;
     border: none !important;
     color: white !important;
@@ -48,4 +56,4 @@
     height: 40px !important;
     margin-top: 20px !important;
     margin-left: auto !important;
-}
+`;

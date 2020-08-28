@@ -1,13 +1,14 @@
 import React from 'react';
-import './Trends.css';
+
+import {TrendsContainer, TrendsDescription, TrendsTopic, TrendsTweets} from './Trends.styles';
 
 const Trends = ({description, topic, numberoftweets}) => {
     return (
-        <div className='trends'>
-            <p className='trends_description'>{description}</p>
-            <h3 className='trends_topic'>{topic}</h3>
-            <p className='trends_tweets'>{numberoftweets}</p>
-        </div>
+        <TrendsContainer>
+            <TrendsDescription>{description}</TrendsDescription>
+            <TrendsTopic>{topic}</TrendsTopic>
+            <TrendsTweets>{numberoftweets}</TrendsTweets>
+        </TrendsContainer>
     )
 }
 

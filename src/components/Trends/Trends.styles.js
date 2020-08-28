@@ -1,29 +1,29 @@
-.trends {
+import styled from 'styled-components';
+
+export const TrendsContainer = styled.div`
     margin-top: 10px;
     margin-left: 10px;
     padding: 10px;
     border-bottom: 1px solid #39444D;
     cursor: pointer;
-    
-}
+    &:hover {
+        background-color: #263341;
+    }
+`;
 
-.trends:hover {
-    background-color: #263341;
-}
-
-.trends_description {
+export const TrendsDescription = styled.div`
     font-size: 13px;
     color: #8899A6;
-}
+`;
 
-.trends_topic {
+export const TrendsTopic = styled.div`
     font-size: 16px;
     font-weight: 800;
     margin-top: 5px;
-}
+`;
 
-.trends_tweets {
+export const TrendsTweets = styled.div`
     font-size: 13px;
     color: #8899A6;
     margin-top: 5px;
-}
+`;

@@ -1,22 +1,26 @@
 import React from 'react';
-import './UserFollow.css';
 
-import {Avatar, Button} from '@material-ui/core';
+import {Avatar} from '@material-ui/core';
+
+import {
+    UserBlock, 
+    UserBlockDetails, 
+    UserBlockDisplayName, 
+    UserBlockUserName, 
+    UserBlockButton
+} from './UserFellow.styles';
 
 const UserFollow = ({avatar, displayName, username}) => {
     return (
-        <div>
-        <div className='widgets_wtfollow_userblock'>
-        <div className='widgets_wtfollow_userblock_avatar'>
+        <UserBlock>
             <Avatar src={avatar}/>
-        </div>
-        <div className='widgets_wtfollow_userblock_details'>
-            <h3 className='displayName'>{displayName}</h3>
-            <p className='username'>{username}</p>
-        </div>
-            <Button variant='outlined' size='medium' className='button'>Follow</Button>
-    </div>
-        </div>
+            
+            <UserBlockDetails>
+                <UserBlockDisplayName>{displayName}</UserBlockDisplayName>
+                <UserBlockUserName>{username}</UserBlockUserName>
+            </UserBlockDetails>
+            <UserBlockButton variant='outlined'>Follow</UserBlockButton>  
+        </UserBlock>
     )
 }
 

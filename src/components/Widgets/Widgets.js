@@ -1,23 +1,38 @@
 import React from 'react';
-import './Widgets.css';
-import SearchIcon from '@material-ui/icons/Search';
-import SettingsIcon from '@material-ui/icons/Settings';
-import UserFollow from '../UserFollow/UserFollow';
 
+import UserFollow from '../UserFollow/UserFollow';
 import Trends from '../Trends/Trends';
+
+import {
+    WidgetContainer, 
+    WidgetInputContainer, 
+    WidgetSearchIcon, 
+    WidgetInput,
+    WidgetsTrendContainer,
+    WidgetsTrendHeader,
+    WidgetsTrendHeaderText,
+    WidgetsTrendHeaderIcon,
+    ShowMore,
+    WtfollowContainer,
+    WtfollowHeader,
+    WtfollowContainerHeading,
+    Footer,
+    FooterTop,
+    FooterDown 
+} from './Widgets.styles';
 
 const Widgets = () => {
     return (
-        <div className='widgets'>
-            <div className='widgets_input'>
-                <SearchIcon className='widgets_searchIcon'/>
-                <input placeholder='Search Twitter' type='text'/>
-            </div>
-            <div className='widgets_trends_container'>
-                <div className='widgets_trends_container_header'>
-                    <h2>Trends for you</h2>
-                    <SettingsIcon className='widgets_trends_header_icon'/>
-                </div>
+        <WidgetContainer>
+            <WidgetInputContainer>
+                <WidgetSearchIcon/>
+                <WidgetInput input placeholder='Search Twitter' type='text'/>
+            </WidgetInputContainer>
+            <WidgetsTrendContainer>
+                <WidgetsTrendHeader>
+                    <WidgetsTrendHeaderText>Trends for you</WidgetsTrendHeaderText>
+                    <WidgetsTrendHeaderIcon/>
+                </WidgetsTrendHeader>
                     <Trends
                         description='Technology'
                         topic='Jeff Bezos'
@@ -43,12 +58,12 @@ const Widgets = () => {
                         topic='15gh'
                         numberoftweets='2,965 Tweets'
                     />
-                    <p className='widgets_showmore'>Show more</p>
-            </div>
-            <div className='widgets_wtfollow_container'>
-                <div className='widgets_wtfollow_container_header'>
-                    <h2>Who to follow</h2>
-                </div>
+                    <ShowMore>Show more</ShowMore>
+            </WidgetsTrendContainer>
+            <WtfollowContainer>
+                <WtfollowHeader>
+                    <WtfollowContainerHeading>Who to follow</WtfollowContainerHeading>
+                </WtfollowHeader>
                 <UserFollow
                     displayName='Jemila'
                     username='@jabdulai'
@@ -64,21 +79,21 @@ const Widgets = () => {
                     username='@S_C_'
                     avatar='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.iyANnOt0QxIUQuaqVaJ3EAHaE8%26pid%3DApi&f=1'
                 />
-                <p className='widgets_showmore'>Show more</p>
-            </div>
-            <div className='widgets_footer'>
-                <div className='widgets_footer_footertop'>
+                <ShowMore>Show more</ShowMore>
+            </WtfollowContainer>
+            <Footer>
+                <FooterTop>
                     <p>Terms</p>
                     <p>Privacy Policy</p>
                     <p>Cookies</p>
                     <p>Ads Info</p>
                     <p>More</p>
-                </div>
-                <div className='widgets_footer_footerdown'>
+                </FooterTop>
+                <FooterDown>
                     <p>© 2020 Twitter, Inc.</p>
-                </div>
-            </div>
-        </div>
+                </FooterDown>
+            </Footer>
+        </WidgetContainer>
     )
 }
 

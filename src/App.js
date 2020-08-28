@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+
+import {GlobalStyle} from './Global.styles'
 
 //components
 import Sidebar from './components/Sidebar/Sidebar';
@@ -9,6 +10,7 @@ import Widgets from './components/Widgets/Widgets';
 function App() {
   return (
     <div className="app">
+    <GlobalStyle/>
       <Sidebar/>
       <Feed/>
       <Widgets/>
